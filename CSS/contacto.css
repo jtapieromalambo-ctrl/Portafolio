@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+*{
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.container-header{
+    background:linear-gradient(to bottom, black,rgba(0, 0, 0, 0.423)) ;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.container-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.container-header header .logo a{
+    font-family: 'Righteous', cursive;
+    font-size: 36px;
+    color: #1cb698;
+    text-decoration: none;
+}
+.container-header header ul{
+    display: flex;
+    list-style: none;
+}
+.container-header header nav ul li a{
+    text-align: center;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.container-header header nav ul li a:hover{
+    color: #1cb698;
+}
+/*formulario y mapa*/
+.section{
+    margin-top: 80px;
+}
+h1{
+    margin-top: 10px;
+    color: #1cb698;
+    font-size: 40px;
+}
+p{
+    margin-top: 20px;
+    color: #fff;
+}
+.contacto{
+    margin-top: 120px;
+    text-align: center;
+}
+.container-section{
+margin-top: 30px;
+
+
+}
+.container-section .container{
+    display: flex;
+  margin-top: 4%;
+    justify-content: center;
+    gap: 50px;
+    height: 100vh;
+}
+.container-section .container .formulario{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: #252525;
+    width: 450px;
+    height: 350px;
+    border-radius: 10%;
+}
+/*dentro del formulario*/
+.container-section .container .formulario input{
+    margin-top: 20px;
+    border-radius: 6px;
+   width: 350px;
+   height: 30px;
+}
+.container-section .container .formulario textarea{
+    margin-top: 20px;
+    width: 350px;
+    height: 100px;
+    border-radius: 6px;
+}
+#mensaje:focus{
+    border-color: #1cb698;
+    outline: none;
+}
+/*mapa*/
+.container-section .container .mapa iframe{
+    width: 450px;
+    height: 350px;
+    border-radius: 10%;
+}
+.container-section .container .formulario .boton input{
+    margin-top: 20px;
+    color: #fff;
+    background: #1cb698;
+    border-radius: 6px;
+    border-color: #1cb698
+}
+textarea{
+    resize: none;
+}
+footer{
+    background-color: black;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+ }
+ footer .redes{
+    margin-bottom: 20px;
+ }
+
+ footer .redes a{
+    color: #fff;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 10px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+ }
+
+ footer .redes a:hover{
+    background: #1cb698;
+    border-color: #1cb698;
+    transform: scale(1.1);
+ }
+ 
