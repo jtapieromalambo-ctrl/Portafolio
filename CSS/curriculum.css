@@ -57,6 +57,54 @@ html{
 .container-header header nav ul li a:hover{
     color: #1cb698;
 }
+#menu-toggle{
+display: none;
+}
+.menu-icon{
+display: none;
+}
+@media (max-width:768px){
+    #menu-toggle{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+        font-size: 28px;
+        cursor:pointer;
+        color: #1cb698;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 300;
+    }
+    /*menu oculto*/
+    .container-header header .nav ul{
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.752);
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        padding: 10px 0;
+        border-radius: 6px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.695);
+        z-index: 250;
+    }
+    /*Mostrar menu al activar*/
+    #menu-toggle:checked ~ .nav ul{
+        display: flex;
+    }
+    .container-header header .nav ul li{
+        margin: 5px 0;
+    }
+    .container-header header .nav ul li a{
+        color: #fff;
+        padding: 10px 15px;
+        display: block;
+        text-align: left;
+    }
+}
 /*inicio*/
 section{
     margin-top: 80px;
@@ -139,4 +187,13 @@ section{
     margin: 0 auto;
     position: relative;
     bottom: 4px;
+}
+
+
+@media (max-width:768px){
+  .container-section{
+   
+  }  
+
+
 }
